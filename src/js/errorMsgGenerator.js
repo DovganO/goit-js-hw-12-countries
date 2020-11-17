@@ -5,7 +5,7 @@ import "@pnotify/core/dist/PNotify.css";
 import getRefs from "./getRefs.js";
 const refs = getRefs();
 
-// кидаю ошибку на страницу, если ее еще на странице нет
+// отображается ошибка на странице, если ее еще на странице нет
 function errorMsgMarkUp() {
   const errorMsg = document.querySelector(".pnotify");
   if (!errorMsg) {
@@ -15,7 +15,7 @@ function errorMsgMarkUp() {
   }
 }
 
-// удаляю ошибку при создании элемента страны
+// удаляется ошибка при создании элемента страны
 function hideError() {
   const errorMsg = document.querySelector(".pnotify-container");
   if (errorMsg) {
